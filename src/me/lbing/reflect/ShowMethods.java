@@ -21,7 +21,7 @@ public class ShowMethods {
         };
         if (args.length < 1) {
             System.out.println(usage);
-            System.exit(0);   
+            System.exit(0);
         }
         int lines = 0;
         try {
@@ -39,6 +39,10 @@ public class ShowMethods {
                     System.out.println(p.matcher(ctor.toString()).replaceAll(""));
                 }
             } else {
+                for (Method method:
+                     methods) {
+                    System.out.println();
+                }
 
             }
 
