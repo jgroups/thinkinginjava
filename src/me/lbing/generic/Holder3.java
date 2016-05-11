@@ -21,5 +21,6 @@ public class Holder3<T> {
     public static void main(String[] args) {
         Holder3<String> h = new Holder3("");
         String a = h.getA();
+        System.out.println(a);
     }
 }
