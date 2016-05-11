@@ -4,10 +4,9 @@ package me.lbing.typeinfo;
  * Created by King on 2016/5/11.
  */
 public class SimpleProxyDemo {
-    public static void consumer(Interface iface){
+    public static void consumer(Interface iface) {
         iface.doSomething();
         iface.somethingelse("---xixi----");
-
     }
 
     public static void main(String[] args) {
@@ -18,6 +17,7 @@ public class SimpleProxyDemo {
 
 interface Interface {
     void doSomething();
+
     void somethingelse(String arg);
 }
 
@@ -30,13 +30,14 @@ class RealObject implements Interface {
 
     @Override
     public void somethingelse(String arg) {
-        System.out.println("doing something else");
+        System.out.println("doing something else:" + arg);
     }
 }
 
 class SimpleProxy implements Interface {
     private Interface proxied;
-    public SimpleProxy(Interface proxied){
+
+    public SimpleProxy(Interface proxied) {
         this.proxied = proxied;
     }
 
@@ -50,7 +51,7 @@ class SimpleProxy implements Interface {
     @Override
     public void somethingelse(String arg) {
         System.out.println("SimpleProxy doing something else before");
-        proxied.doSomething();
+        proxied.somethingelse(arg);
         System.out.println("SimpleProxy doing something else after");
     }
 }
