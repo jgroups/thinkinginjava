@@ -8,6 +8,9 @@ public class ArrayOptions {
         BerylliumSphere[] a = {};
         BerylliumSphere[] b;
         b = new BerylliumSphere[]{};
+        char[] c = new char[4];
+        System.out.println(c);
+        System.out.println(c[0] +c[2]);
 
     }
 }
