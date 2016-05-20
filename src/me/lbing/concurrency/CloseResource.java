@@ -14,7 +14,7 @@ public class CloseResource {
         ExecutorService service = Executors.newCachedThreadPool();
         service.execute(new IOBlocked(System.in));
         Thread.sleep(100);
-        service.shutdown();
+        service.shutdownNow();
         System.in.close();
     }
 }
