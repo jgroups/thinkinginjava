@@ -24,7 +24,7 @@ class ExplicitPairManager1 extends PairManager {
 class ExplicitPairManager2 extends PairManager {
     private Lock lock = new ReentrantLock();
 
-    public  void increment() {
+    public synchronized void increment() {
         Pair temp;
         lock.lock();
         try {
