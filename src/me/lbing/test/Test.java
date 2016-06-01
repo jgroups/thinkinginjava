@@ -11,4 +11,9 @@ public abstract class Test<C> {
     }
 
     abstract int test(C container,TestParam tp);
+
+    public static void main(String[] args) {
+        //
+        System.out.println("----");
+    }
 }
