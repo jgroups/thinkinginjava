@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 public class TestFuture {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newCachedThreadPool();
-        Task task = new Task();
+        Task0 task = new Task0();
         Future<Integer> result = executor.submit(task);
         executor.shutdown();
 
@@ -32,7 +32,7 @@ public class TestFuture {
     }
 }
 
-class Task implements Callable<Integer> {
+class Task0 implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         System.out.println("子线程在进行计算");
