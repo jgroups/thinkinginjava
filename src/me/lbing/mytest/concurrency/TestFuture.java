@@ -5,7 +5,7 @@ import java.util.concurrent.*;
 /**
  * Created by King on 2016/7/22.
  */
-public class Test {
+public class TestFuture {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newCachedThreadPool();
         Task task = new Task();
