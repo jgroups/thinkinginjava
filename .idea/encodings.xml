@@ -13,7 +13,7 @@
     <file url="file://$PROJECT_DIR$/src/me/lbing/concurrency/ToastOMatic.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/me/lbing/concurrency/waxomatic" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/me/lbing/concurrency/waxomatic2" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/typeinfo" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/typeinfo" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
